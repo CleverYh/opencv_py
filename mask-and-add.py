@@ -2,8 +2,8 @@
 from cv2 import cv2
 import numpy as np
 
-img_1 = cv2.imread('a.jpg')
-img_2 = cv2.imread('save.jpg')
+img_1 = cv2.imread(r'pictures\a.jpg')
+img_2 = cv2.imread(r'pictures\save.jpg')
 
 
 

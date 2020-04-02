@@ -2,7 +2,7 @@
 from cv2 import cv2
 import numpy as np
 
-img = cv2.imread('a.jpg')
+img = cv2.imread(r'pictures\a.jpg')
 
 cv2.namedWindow("Demo")
 roi = img[600:1200, 2100:3600]  # 1500x600 (r=600,c=1500)

@@ -3,7 +3,7 @@ from cv2 import cv2
 import numpy as np
 
 cv2.namedWindow("Video", cv2.WINDOW_AUTOSIZE)
-cap = cv2.VideoCapture('video.mov')
+cap = cv2.VideoCapture(r'pictures\video.mov')
 
 while (cap.isOpened()):
     ret, frame = cap.read()  # ret return bool

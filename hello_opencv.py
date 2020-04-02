@@ -4,8 +4,8 @@ from cv2 import cv2  # is equal to: import cv2
 import numpy as np
 import imutils
 
-img = cv2.imread('a.jpg')
-# img_gray = cv2.imread('a.jpg', 0)
+img = cv2.imread(r'pictures\a.jpg')
+# img_gray = cv2.imread('pictures\a.jpg', 0)
 # cv2.namedWindow("Example_1", cv2.WINDOW_AUTOSIZE) # 图片不缩放 窗口缩放
 # 图片缩放以适应窗口
 # cv2.namedWindow("Example_1", 0)

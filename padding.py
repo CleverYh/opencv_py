@@ -2,7 +2,7 @@
 from cv2 import cv2
 import matplotlib.pyplot as plt
 
-img_BGR = cv2.imread('cat.jpg')
+img_BGR = cv2.imread(r'pictures\cat.jpg')
 
 img_RGB = cv2.cvtColor(img_BGR, cv2.COLOR_BGR2RGB)  # matplotlib process in RGB
 constant = cv2.copyMakeBorder(

@@ -2,7 +2,7 @@
 from cv2 import cv2
 import numpy as np
 
-img = cv2.imread('a.jpg')
+img = cv2.imread(r'pictures\a.jpg')
 
 pixel = img[200, 200]
 img[200, 200] = [255, 255, 255]
