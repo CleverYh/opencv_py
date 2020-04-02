@@ -3,7 +3,7 @@ from cv2 import cv2
 import numpy as np
 import imutils
 
-img = cv2.imread('a.jpg')
+img = cv2.imread(r'pictures\a.2x.jpg')
 reversed_img = 255 - img  # 对图像取反
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # init
