@@ -1,3 +1,4 @@
+# coding: utf-8
 from cv2 import cv2
 import numpy as np
 import imutils
@@ -14,6 +15,7 @@ random_img = np.zeros((gray_img.shape[0], gray_img.shape[1]), dtype=np.uint8)
 #         random_img[i, j] = gray_img[i, j]*1.5
 
 
+cv2.imwrite(r"C:\Users\cortex\Documents\code\opencv_py\save.jpg", gray_img)
 cv2.namedWindow("random_img", 0)
 cv2.namedWindow("Reversed", 0)
 cv2.imshow('Reversed', reversed_img)
