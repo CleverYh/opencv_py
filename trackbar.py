@@ -2,7 +2,7 @@
 from cv2 import cv2
 import numpy as np
 
-img = cv2.imread(r'pictures\lenahalf.jpg')
+img = cv2.imread(r'pictures\lena.jpg')
 
 
 def nothing(args):

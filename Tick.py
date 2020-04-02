@@ -2,7 +2,7 @@
 from cv2 import cv2
 import numpy as np
 
-img_1 = cv2.imread(r'pictures\lenahalf.jpg')
+img_1 = cv2.imread(r'pictures\lena.jpg')
 
 e1 = cv2.getTickCount()
 for i in range(7, 24, 2):
