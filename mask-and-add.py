@@ -3,7 +3,7 @@ from cv2 import cv2
 import numpy as np
 
 img_1 = cv2.imread('a.jpg')
-img_2 = cv2.imread('souji.jpg')
+img_2 = cv2.imread('save.jpg')
 
 
 
@@ -23,7 +23,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # src1, alpha, src2, beta, gamma(最后加上常量值) 图片大小通道应该相同。
-blend = cv2.addWeighted(img_1, 0.5, img_2, 0.9, 0)
+blend = cv2.addWeighted(img_1, 0.4, img_2, 0.8, 0)
 
 cv2.namedWindow("blend", 0)
 cv2.imshow("blend", blend)
