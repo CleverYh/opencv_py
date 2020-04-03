@@ -22,7 +22,7 @@ e2 = cv2.getTickCount()
 plt.show()
 
 t = (e2 - e1)/cv2.getTickFrequency()
-print('Process time: ',t, 's', sep='')
+print('Process time: ', t, 's', sep='')
 
 # cv2.threshold():
 # 参数：
