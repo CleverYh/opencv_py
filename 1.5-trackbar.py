@@ -50,18 +50,22 @@ while(1):
     res = cv2.add(img, img, mask=mask)
 
     cv2.imshow("img", img)
-    
+
     if s == 0:
         cv2.destroyWindow("mask")
-        cv2.destroyWindow("res")     
+        cv2.destroyWindow("res")
     else:
         cv2.imshow("mask", mask)
         cv2.imshow("res", res)
-        
+
     k = cv2.waitKey(1)
-    if k == 27:  # ESC to quit
+    if k == ord("s") & s == 1:
+        cv2.imwrite('1.5_temp_save_mask', mask)
+        cv2.imwrite('1.5_temp_save_res', res)
+        print("lower=", lower_b, "upper=", upper_b)
+    elif k == 27:  # ESC to quit
         if s == 1:
-            print("lower=",lower_b,"upper=",upper_b)
+            print("lower=", lower_b, "upper=", upper_b)
         break
 
 cv2.destroyAllWindows()
