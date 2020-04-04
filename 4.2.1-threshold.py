@@ -4,25 +4,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 img = cv2.imread(r'pictures\lena.jpg', 0)  # 使用灰度图
-e1 = cv2.getTickCount()
-ret, thre_1 = cv2.threshold(img, 100, 255, cv2.THRESH_BINARY)
-adaptive_thre_1 = cv2.adaptiveThreshold(
-    img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, 2)
-adaptive_thre_2 = cv2.adaptiveThreshold(
-    img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 7, 2)
 
-titles = ["img", "thre_1", "adaptive_thre_1", "adaptive_thre_2"]
-imgs = [img, thre_1, adaptive_thre_1, adaptive_thre_2]
+# OpenCV-tutroals
+ret,thresh1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+ret,thresh2 = cv2.threshold(img,127,255,cv2.THRESH_BINARY_INV)
+ret,thresh3 = cv2.threshold(img,127,255,cv2.THRESH_TRUNC)
+ret,thresh4 = cv2.threshold(img,127,255,cv2.THRESH_TOZERO)
+ret,thresh5 = cv2.threshold(img,127,255,cv2.THRESH_TOZERO_INV)
 
-for i in range(4):
-    plt.subplot(2, 2, i+1), plt.imshow(imgs[i], "gray")
+titles = ['Original Image','BINARY','BINARY_INV','TRUNC','TOZERO','TOZERO_INV']
+images = [img, thresh1, thresh2, thresh3, thresh4, thresh5]
+
+for i in range(6):
+    plt.subplot(2,3,i+1),plt.imshow(images[i],'gray')
     plt.title(titles[i])
-    plt.xticks([]), plt.yticks([])
-e2 = cv2.getTickCount()
+    plt.xticks([]),plt.yticks([])
+    
 plt.show()
 
-t = (e2 - e1)/cv2.getTickFrequency()
-print('Process time: ', t, 's', sep='')
+
 
 # cv2.threshold():
 # 参数：

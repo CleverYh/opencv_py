@@ -32,3 +32,5 @@ img[0:600, 1000:2500] = roi
 cv2.imshow("Demo", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# cv2.split() is a costly operation (in terms of time), so only use it if necessary. Numpy indexing is much more efficient and should be used if possible.

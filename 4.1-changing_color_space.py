@@ -32,3 +32,6 @@ cv2.imshow('random_img', gray_img)
 # cv2.imshow('random_img', hsv_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# For HSV, Hue range is [0,179], Saturation range is [0,255] and Value range is [0,255]. Different softwares use different scales. So if you are comparing OpenCV values with them, you need to normalize these ranges.
+

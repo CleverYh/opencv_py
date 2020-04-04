@@ -1,1 +1,0 @@
-white_img = 255-black_img

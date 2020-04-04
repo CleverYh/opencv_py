@@ -1,9 +1,9 @@
 # coding: utf-8
-import matplotlib.pyplot as plt
 import numpy as np
 from cv2 import cv2
+import matplotlib.pyplot as plt
 
-img = cv2.imread(r'pictures\lena.jpg', 0)
+img = cv2.imread(r'pictures\noisy.jpg', 0)
 
 # thresh v. 使脱粒
 # global thresholding
