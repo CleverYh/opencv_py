@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 img = cv2.imread(r'pictures\cat.jpg')
 rows,cols,_ = img.shape
 
-M = np.float32([[1,0,100],[0,1,50]])
+M = np.float32([[1,0,100],[0,1,200]])
 dst = cv2.warpAffine(img,M,(cols,rows))
 
 cv2.imshow('img',dst)
