@@ -19,5 +19,4 @@ plt.subplot(121), plt.imshow(img), plt.title('Input')
 plt.subplot(122), plt.imshow(dst), plt.title('Output')
 plt.show()
 
-
 # For perspective transformation, you need a 3x3 transformation matrix. Straight lines will remain straight even after the transformation. To find this transformation matrix, you need 4 points on the input image and corresponding points on the output image. Among these 4 points, 3 of them should not be collinear. Then transformation matrix can be found by the function cv2.getPerspectiveTransform. Then apply cv2.warpPerspective with this 3x3 transformation matrix.

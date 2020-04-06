@@ -2,6 +2,8 @@
 from cv2 import cv2
 import numpy as np
 
+###### 通过末时钟计数减去初时钟计数的差除以时钟频率计算时间 ######
+
 img_1 = cv2.imread(r'pictures\lena.jpg')
 
 e1 = cv2.getTickCount()

@@ -17,7 +17,6 @@ plt.subplot(122), plt.imshow(dst), plt.title('Averaging')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
-
 # As for one-dimensional signals, images also can be filtered with various low-pass filters (LPF), high-pass filters (HPF), etc. A LPF helps in removing noise, or blurring the image. A HPF filters helps in finding edges in an image.
 
 # OpenCV provides a function, cv2.filter2D()

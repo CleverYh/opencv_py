@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 img = cv2.imread(r'pictures\lena.jpg', 0)  # 使用灰度图
 
-# OpenCV-tutroals
 ret,thresh1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 ret,thresh2 = cv2.threshold(img,127,255,cv2.THRESH_BINARY_INV)
 ret,thresh3 = cv2.threshold(img,127,255,cv2.THRESH_TRUNC)
