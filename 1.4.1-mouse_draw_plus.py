@@ -2,7 +2,8 @@
 from cv2 import cv2
 import numpy as np
 
-
+###### 默认画矩形, 按M改变模式, 可以画直线 ######
+###### 但是鼠标速度不宜过快 #################### 
 
 drawing = False  # true if mouse is pressed
 mode = True  # if True, draw rectangle. Press 'm' to toggle to curve

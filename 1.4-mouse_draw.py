@@ -2,6 +2,8 @@
 from cv2 import cv2
 import numpy as np
 
+############ 双击处画圆, ESC退出 ############
+
 # mouse callback function
 def draw_circle(event,x,y,flags,param):
     if event == cv2.EVENT_LBUTTONDBLCLK:
