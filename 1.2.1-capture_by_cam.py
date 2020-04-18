@@ -3,6 +3,7 @@ from cv2 import cv2
 import numpy as np
 
 cap = cv2.VideoCapture(700) # my cam ID is 700 on my notebook but it may not work on your computer. You can try to run "1.2.1.1-find-cam-id.py" to find your camera ID first.
+# my webcam dead. R.I.P.
 
 while(True):
     # Capture frame-by-frame
