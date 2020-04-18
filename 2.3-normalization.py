@@ -7,7 +7,6 @@ cv2.namedWindow("input", cv2.WINDOW_AUTOSIZE)
 cv2.imshow("input", img)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# 转换为浮点数类型数组
 gray = np.float32(gray)
 print(gray)
 
