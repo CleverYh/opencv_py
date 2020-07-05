@@ -1,6 +1,6 @@
 # opencv_py
 
-My stupid code learning opencv without C++
+My stupid code learning opencv with Python
 
 ## Env
 
