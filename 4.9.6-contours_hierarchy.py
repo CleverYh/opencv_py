@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 # Next denotes next contour at the same hierarchical level. Previous denotes previous contour at the same hierarchical level. First_Child denotes its first child contour. Parent denotes index of its parent contour. If there is no child or parent, that field is taken as -1
 
 img_rgb = cv2.imread(r'pictures\tree_hierarchy.png')
-img_rgb2 = img_rgb.copy()
-img_rgb3 = img_rgb.copy()
 img = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(img, 127, 255, 0)
 
