@@ -11,14 +11,13 @@ OpenCV 4.2
 
 ## Structure
 
-|
-|--.vscode  
-|--pictures  
-|    |--pictures used in code  
-|--codes  
-|--README.md  
-|--git files  
-|--LICENSE  
+|-- .vscode  
+|-- pictures  
+|&emsp;&emsp;|-- pictures used in code  
+|-- codes  
+|-- README.md  
+|-- git files  
+|-- LICENSE  
  
 ## Code Content
 
