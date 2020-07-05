@@ -61,4 +61,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # 2. Compare images of digits or letters using cv2.matchShapes(). ( That would be a simple step towards OCR )
-# TBD
+# 太简单不做了睡大觉
