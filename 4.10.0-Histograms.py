@@ -3,7 +3,7 @@ import numpy as np
 from cv2 import cv2
 import matplotlib.pyplot as plt
 
-# So what is histogram ? You can consider histogram as a graph or plot, which gives you an overall idea about the intensity distribution of an image. It is a plot with pixel values (ranging from 0 to 255, not always) in X-axis and corresponding number of pixels in the image on Y-axis. You can find it on your cellphone gallery, camera, Photoshop and so on.
+# So what is histogram ? You can consider histogram as a graph or plot, which gives you an overall idea about the intensity distribution of an image. It is a plot with pixel values (ranging from 0 to 255, not always) in X-axis and corresponding number of pixels in the image on Y-axis. You can find it on your cellphone gallery, camera, Photoshop and so on. https://www.cambridgeincolour.com/tutorials/histograms1.htm
 
 # Now we have an idea on what is histogram, we can look into how to find this. Both OpenCV and Numpy come with in-built function for this. Before using those functions, we need to understand some terminologies related with histograms.
 
