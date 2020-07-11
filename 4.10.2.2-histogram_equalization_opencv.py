@@ -3,11 +3,11 @@ import numpy as np
 from cv2 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread(r'pictures\equalization_opencv.jpg',0)
+img = cv2.imread(r'pictures\equalization_opencv.jpg', 0)
 
 # OpenCV has a function to do histograms equalization, cv2.equalizeHist(). Its input is just grayscale image and output is our histogram equalized image.
 equ = cv2.equalizeHist(img)
-res = np.hstack((img,equ)) #stacking images side-by-side
+res = np.hstack((img, equ))  # stacking images side-by-side
 
 plt.imshow(res, 'gray')
 plt.show()
