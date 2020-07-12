@@ -35,3 +35,5 @@ plt.subplot(312), plt.imshow(thresh)
 plt.subplot(313), plt.imshow(res)
 
 plt.show()
+
+# Additional Resources : “Indexing via color histograms”, Swain, Michael J. , Third international conference on computer vision,1990.
