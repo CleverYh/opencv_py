@@ -15,12 +15,12 @@ OpenCV 4.2
 
 ## Structure
 
-|-- JupyterNotebook  
-|&emsp;&emsp;|-- codes in format .ipynb
-|-- pictures  
-|&emsp;&emsp;|-- pictures used in code  
-|-- codes  
-|-- README.md  
+|-- JupyterNotebook    
+|&emsp;&emsp;|-- codes in format .ipynb  
+|-- pictures   
+|&emsp;&emsp;|-- pictures used in code   
+|-- codes   
+|-- README.md   
 |-- git files  
 |-- LICENSE  
  
