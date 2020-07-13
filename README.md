@@ -15,7 +15,8 @@ OpenCV 4.2
 
 ## Structure
 
-|-- .vscode  
+|-- JupyterNotebook 
+|&emsp;&emsp;|-- codes in format .ipynb
 |-- pictures  
 |&emsp;&emsp;|-- pictures used in code  
 |-- codes  
