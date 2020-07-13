@@ -1,6 +1,6 @@
 # coding: utf-8
-from cv2 import cv2
 import numpy as np
+from cv2 import cv2
 
 print(cv2.useOptimized())
 
@@ -27,3 +27,5 @@ print('Process time: ',t, 's', sep='')
 # Exploit the cache coherence.
 # Never make copies of array unless it is needed. Try to use views instead. Array copying is a costly operation.
 # Even after doing all these operations, if your code is still slow, or use of large loops are inevitable, use additional libraries like Cython to make it faster.
+
+# More performance optimization will learn in the future.
