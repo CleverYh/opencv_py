@@ -23,7 +23,7 @@ edges = cv2.Canny(gray, 50, 150, apertureSize=3)
 
 lines = cv2.HoughLines(edges, 1, np.pi/180, 180)
 for line in lines:
-# for rho, theta in lines[0]: This is wrong. Only one line will be found through this way.
+    # for rho, theta in lines[0]: This is wrong. Only one line will be found through this way.
     rho, theta = line[0]
     a = np.cos(theta)
     b = np.sin(theta)
